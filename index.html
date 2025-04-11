@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Skills</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+        }
+    
+        .skill {
+          margin-bottom: 25px;
+        }
+    
+        .skill-name {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+    
+        .progress-bar {
+          height: 8px;
+          border-radius: 10px;
+          background: #e0e0e0;
+          overflow: hidden;
+          position: relative;
+        }
+    
+        .progress-bar-fill {
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(to right, #2c3e50, #8e44ad, #e74c3c);
+          border-radius: 10px;
+        }
+    
+        .percent {
+          float: right;
+        }
+      </style>
+   
+    <script src="https://kit.fontawesome.com/9136adee62.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="" class="logo"> -->
+                 <h1><span>M</span>esfin <span>G</span>.</h1>
+                 <div class="mobile-menu">
+                    <button class="toggle-btn" onclick="toggleNav()">☰</button>
+                    <!-- <i class="fas fa-times"></i> -->
+                </div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+          <div class="head-section">
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Mesfin</span> <br> Getahun from Bahir Dar, Ethiopia</h1>
+            </div>
+            <div>
+                <img src="photo_6_2025-04-11_13-38-40.jpg" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo_1_2025-04-11_13-38-40.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a self-taught Frontend Developer specializing in React.js, with hands-on experience building dynamic web apps. I have developed projects like a Tic Tac Toe Game using React js, and a responsive portfolio with HTML, Javascript and CSS. I’m proficient in JavaScript, React, and modern CSS, and I’m passionate about writing clean, reusable code. I’m now looking for my first professional role where I can collaborate with a team, learn from experienced developers, and deliver great user experiences.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" data-tab="skills">Skills</p>
+                        <p class="tab-links" data-tab="experience">Experience</p>
+                        <p class="tab-links" data-tab="education">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UX/UI</span> <br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span> <br> Web app development</li>
+                            <li><span>Application Development</span> <br>Android/iOS app development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <!-- <ul>
+                            <li><span>UX/UI</span> <br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span> <br> Web app development</li>
+                        </ul> -->
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <P>Computer Science at Bahir Dar University, in progress.</P>
+                            <p>Accounting and Finance at Ambassador College Bahir Dar, in progress</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- My services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Web Development</h2>
+                    <p>I specialize on building interactive and animated user interfaces.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I build the UX/UI designs for websites.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React Development</h2>
+                    <p>I can do websites using reusable components and clean code and integrate with API.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>Application Development</h2>
+                    <p>I can develop Android and iOS applications using Flutter.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+               <div class="work">
+                <img src="Screenshot calculator.png" alt="">
+                <div class="layer">
+                    <h3>Digital Clock</h3>
+                    <p>--------</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+               </div> 
+               <div class="work">
+                <img src="Screenshot clock.png" alt="">
+                <div class="layer">
+                    <h3>Simple Calculator</h3>
+                    <p>--------</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+               </div>
+               <div class="work">
+                <img src="Screenshot game.png" alt="">
+                <div class="layer">
+                    <h3>Rock Paper Scissor Game</h3>
+                    <p>--------</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+               </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+        <!-- Skills -->
+       
+        <h1 class="sub-title">My Skills</h1>
+        
+          <div class="skill">
+            <div class="skill-name">HTML 5 <span class="percent">100%</span></div>
+            <div class="progress-bar"><div class="progress-bar-fill"></div></div>
+          </div>
+        
+          <div class="skill">
+            <div class="skill-name">CSS3 <span class="percent">100%</span></div>
+            <div class="progress-bar"><div class="progress-bar-fill"></div></div>
+          </div>
+        
+          <div class="skill">
+            <div class="skill-name"> BOOTSTRAP <span class="percent">90%</span></div>
+            <div class="progress-bar"><div class="progress-bar-fill"></div></div>
+          </div>
+        
+          <div class="skill">
+            <div class="skill-name">JAVASCRIPT <span class="percent">90%</span></div>
+            <div class="progress-bar"><div class="progress-bar-fill"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">REACT <span class="percent">85%</span></div>
+            <div class="progress-bar"><div class="progress-bar-fill"></div></div>
+          </div>
+        
+         
+<!--        
+        
+     <div class="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <h2>HTML</h2>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%">90%</div>
+                    </div>
+                </div>
+                <div>
+                    <h2>CSS</h2>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div>
+                    <h2>JavaScript</h2>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div>
+                    <h2>React</h2>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+     </div>
+     <!-- Contact -->
+      <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> mesfing1717@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +251944171799</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mesfin.getahun.186" class="facebook" ><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://t.me/Messi_1717" class="telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/mesfing1717/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""></a>
+
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Mesfin. Made by Mesfin Getahun 2025 </p>
+        </div>
+      </div>
+    <script src="index.js"></script>
+</body>
+</html>
