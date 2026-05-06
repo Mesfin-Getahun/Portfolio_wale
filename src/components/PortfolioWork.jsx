@@ -78,7 +78,7 @@ const PortfolioWork = () => {
             viewport={{ once: true, delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white"
           >
-            My Recent Work
+            Featured Projects
           </motion.h1>
         </div>
 
@@ -97,6 +97,7 @@ const PortfolioWork = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
                   className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
               </div>

@@ -49,10 +49,10 @@ const Header = ({ theme, toggleTheme }) => {
             </motion.h1>
             
             <div className="flex items-center gap-4 md:hidden">
-              <button onClick={toggleTheme} className="text-2xl focus:outline-none focus:text-primary transition-colors text-gray-800 dark:text-gray-200">
+              <button aria-label="Toggle Theme" onClick={toggleTheme} className="text-2xl focus:outline-none focus:text-primary transition-colors text-gray-800 dark:text-gray-200">
                 {theme === 'dark' ? <FaSun /> : <FaMoon />}
               </button>
-              <button onClick={toggleMenu} className="text-3xl focus:outline-none focus:text-primary transition-colors text-gray-800 dark:text-gray-200">
+              <button aria-label="Toggle Menu" onClick={toggleMenu} className="text-3xl focus:outline-none focus:text-primary transition-colors text-gray-800 dark:text-gray-200">
                 ☰
               </button>
             </div>
@@ -72,7 +72,7 @@ const Header = ({ theme, toggleTheme }) => {
                 </li>
               ))}
               <li className="hidden md:block ml-4 pl-4 border-l border-gray-300 dark:border-gray-700">
-                <button onClick={toggleTheme} className="text-xl focus:outline-none hover:text-primary transition-colors text-gray-500 dark:text-gray-400 mt-1">
+                <button aria-label="Toggle Theme" onClick={toggleTheme} className="text-xl focus:outline-none hover:text-primary transition-colors text-gray-500 dark:text-gray-400 mt-1">
                   {theme === 'dark' ? <FaSun /> : <FaMoon />}
                 </button>
               </li>

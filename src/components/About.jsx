@@ -75,7 +75,7 @@ const About = () => {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 dark:bg-primary/10 rounded-[2rem] transform rotate-3 scale-105 transition-transform duration-500 hover:rotate-6"></div>
-              <img src={aboutImg} alt="About Me" className="w-full rounded-[2rem] shadow-xl relative z-10 object-cover aspect-[4/5]" />
+              <img src={aboutImg} alt="About Me" loading="lazy" className="w-full rounded-[2rem] shadow-xl relative z-10 object-cover aspect-[4/5]" />
             </div>
           </motion.div>
           

@@ -1,8 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaFacebook, FaTelegram, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa6';
 
 const Contact = () => {
+  const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const form = e.target;
+    
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        setStatus('SUCCESS');
+        form.reset();
+      } else {
+        setStatus('ERROR');
+      }
+    } catch (error) {
+      setStatus('ERROR');
+    }
+    setIsSubmitting(false);
+  };
+
   return (
     <div id="contact" className="py-24 relative overflow-hidden text-gray-800 dark:text-white">
       {/* Background decoration */}
@@ -46,19 +75,19 @@ const Contact = () => {
             </div>
             
             <div className="flex gap-4 flex-wrap">
-              <a href="https://www.facebook.com/mesfin.getahun.186" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
+              <a aria-label="Facebook" href="https://www.facebook.com/mesfin.getahun.186" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
                 <FaFacebook className="text-xl" />
               </a>
-              <a href="https://t.me/Messi_1717" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
+              <a aria-label="Telegram" href="https://t.me/Messi_1717" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
                 <FaTelegram className="text-xl" />
               </a>
-              <a href="https://www.instagram.com/mesfing1717/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
+              <a aria-label="Instagram" href="https://www.instagram.com/mesfing1717/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
                 <FaInstagram className="text-xl" />
               </a>
-              <a href="https://www.linkedin.com/in/mesfin-getahun-78947a35a" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1" title="LinkedIn">
+              <a aria-label="LinkedIn" href="https://www.linkedin.com/in/mesfin-getahun-78947a35a" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1" title="LinkedIn">
                 <FaLinkedin className="text-xl" />
               </a>
-              <a href="https://github.com/Mesfin-Getahun" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1" title="GitHub">
+              <a aria-label="GitHub" href="https://github.com/Mesfin-Getahun" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1" title="GitHub">
                 <FaGithub className="text-xl" />
               </a>
             </div>
@@ -75,6 +104,7 @@ const Contact = () => {
               <form 
                 action="https://formspree.io/f/meengqzq" 
                 method="POST" 
+                onSubmit={handleSubmit}
                 className="flex flex-col gap-6 w-full"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -105,6 +135,7 @@ const Contact = () => {
                   <textarea 
                     name="message" 
                     rows="5" 
+                    required
                     placeholder="How can I help you?" 
                     className="w-full bg-gray-50 dark:bg-darker text-gray-900 dark:text-white px-5 py-4 rounded-xl outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-y border border-gray-200 dark:border-transparent focus:border-primary dark:focus:border-primary focus:bg-white"
                   ></textarea>
@@ -112,10 +143,18 @@ const Contact = () => {
                 
                 <button 
                   type="submit" 
-                  className="bg-primary text-white w-full md:w-auto md:px-14 py-4 rounded-xl text-lg font-medium hover:bg-opacity-90 hover:shadow-lg hover:shadow-primary/30 transition-all cursor-pointer mt-2"
+                  disabled={isSubmitting}
+                  className="bg-primary text-white w-full md:w-auto md:px-14 py-4 rounded-xl text-lg font-medium hover:bg-opacity-90 hover:shadow-lg hover:shadow-primary/30 transition-all cursor-pointer mt-2 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
+                
+                {status === 'SUCCESS' && (
+                  <p className="text-green-500 dark:text-green-400 font-medium mt-2">Thank you! Your message has been sent successfully.</p>
+                )}
+                {status === 'ERROR' && (
+                  <p className="text-red-500 dark:text-red-400 font-medium mt-2">Oops! There was a problem submitting your form.</p>
+                )}
               </form>
             </div>
           </motion.div>
