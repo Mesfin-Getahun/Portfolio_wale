@@ -8,7 +8,7 @@ const services = [
   {
     icon: <FaCode className="text-4xl" />,
     title: 'Frontend Web Development',
-    description: 'I specialize on building interactive and animated user interfaces with modern tech stacks.',
+    description: 'I specialize in building interactive and animated user interfaces with modern tech stacks.',
   },
   {
     icon: <FaCropSimple className="text-4xl" />,

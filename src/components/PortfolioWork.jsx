@@ -13,7 +13,7 @@ const projects = [
     title: 'Tour and Travel Booking',
     description: 'A comprehensive travel platform allowing users to explore destinations and book tours securely. Features JWT authentication, encrypted passwords, and Cloudinary media management.',
     image: tourImg,
-    link: '#',
+    link: 'https://kasopiaethiopiatour.com/',
     github: 'https://github.com/Mesfin-Getahun/Kasopia-tour-and-travel.git',
     tags: ['React.js', 'Node/Express', 'MySQL', 'JWT', 'Cloudinary', 'Bcrypt']
   },
@@ -21,7 +21,7 @@ const projects = [
     title: 'Tic Tac Toe Game',
     description: 'A classic Tic Tac Toe game featuring interactive UI, score tracking, and responsive design.',
     image: clockImg,
-    link: '#',
+    link: 'https://tic-tac-toe-game-in-react-topaz.vercel.app/',
     github: 'https://github.com/Mesfin-Getahun/Tic-Tac-Toe-Game-In-React.git',
     tags: ['HTML', 'CSS', 'JavaScript']
   },
@@ -53,7 +53,7 @@ const projects = [
     title: 'Smart Attendance System',
     description: 'An intelligent attendance tracking system that leverages YOLOv8 and OpenCV for real-time face detection and recognition, with a Tkinter GUI and local file-based storage.',
     image: electionImg,
-    link: '', 
+    link: '#', 
     github: 'https://github.com/Mesfin-Getahun/Smart-Attendance-using-Face-detection-and-Recognition.git',
     tags: ['Python', 'Tkinter', 'OpenCV', 'YOLOv8', 'NumPy']
   }
@@ -110,7 +110,7 @@ const PortfolioWork = () => {
                   </h3>
 
                   <div className="flex gap-3 mt-1 shrink-0">
-                    {project.github && (
+                    {project.github && project.github !== '#' && (
                       <a
                         href={project.github}
                         title="Source Code"
@@ -121,7 +121,7 @@ const PortfolioWork = () => {
                         <FaGithub className="text-[22px]" />
                       </a>
                     )}
-                    {project.link && project.link !== '' && (
+                    {project.link && project.link !== '' && project.link !== '#' && (
                       <a
                         href={project.link}
                         title="Live Demo"
