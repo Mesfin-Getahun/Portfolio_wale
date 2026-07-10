@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { FaSun, FaMoon, FaDownload } from 'react-icons/fa6';
-import profileImg from '../assets/photo_6_2025-04-11_13-38-40.jpg';
+import profileImg from '../assets/DLIG4288.JPG';
 
 const Header = ({ theme, toggleTheme }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [titleIndex, setTitleIndex] = useState(0);
 
-  const titles = ['Full-Stack Developer', 'Mobile App Developer', 'UI/UX Designer'];
+  const titles = ['Full Stack developer', 'Graphics designer'];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -45,7 +45,7 @@ const Header = ({ theme, toggleTheme }) => {
               transition={{ duration: 0.5 }}
               className="text-2xl md:text-3xl font-bold tracking-tight"
             >
-              <span className="text-primary">M</span>esfin <span className="text-primary">G</span>.
+              <span className="text-primary">W</span>alelign <span className="text-primary">E</span>.
             </motion.h1>
             
             <div className="flex items-center gap-4 md:hidden">
@@ -91,7 +91,7 @@ const Header = ({ theme, toggleTheme }) => {
           >
             <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] text-gray-900 dark:text-white mb-4">
               Hi, I'm <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">Mesfin Getahun</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">Walelign Enemayehu</span>
             </h1>
             
             <div className="h-8 mb-6 flex items-center justify-center md:justify-start">
@@ -110,7 +110,7 @@ const Header = ({ theme, toggleTheme }) => {
             </div>
             
             <p className="mt-2 text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-lg mx-auto md:mx-0 leading-relaxed">
-              Crafting beautiful, responsive, and highly interactive user interfaces from Bahir Dar, Ethiopia.
+              Tech stack: JavaScript, React, NodeJs, MongoDB, NextJs, Photoshop, Canvas, Figma...
             </p>
             
             <div className="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
@@ -130,13 +130,13 @@ const Header = ({ theme, toggleTheme }) => {
               >
                 View Work
               </Link>
-              <a 
+              {/* <a 
                 href="/Mesfin_Getahun_CV.pdf" 
                 download
                 className="px-8 py-3.5 bg-primary text-white rounded-full font-medium hover:bg-opacity-90 hover:shadow-lg hover:shadow-primary/30 transition-all cursor-pointer flex items-center gap-2 justify-center"
               >
                 <FaDownload /> Download CV
-              </a>
+              </a> */}
             </div>
           </motion.div>
           

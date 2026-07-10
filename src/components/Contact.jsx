@@ -59,7 +59,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1">Email</p>
-                  <p className="font-semibold text-gray-900 dark:text-white">mesfing1717@gmail.com</p>
+                  <p className="font-semibold text-gray-900 dark:text-white">walelign2129@gmail.com</p>
                 </div>
               </div>
 
@@ -69,25 +69,25 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1">Phone</p>
-                  <p className="font-semibold text-gray-900 dark:text-white">+251944171799</p>
+                  <p className="font-semibold text-gray-900 dark:text-white">+251922840235</p>
                 </div>
               </div>
             </div>
             
             <div className="flex gap-4 flex-wrap">
-              <a aria-label="Facebook" href="https://www.facebook.com/mesfin.getahun.186" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
+              {/* <a aria-label="Facebook" href="https://www.facebook.com/mesfin.getahun.186" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
                 <FaFacebook className="text-xl" />
-              </a>
-              <a aria-label="Telegram" href="https://t.me/Messi_1717" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
+              </a> */}
+              <a aria-label="Telegram" href="https://t.me/walie_21" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
                 <FaTelegram className="text-xl" />
               </a>
               <a aria-label="Instagram" href="https://www.instagram.com/mesfing1717/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
                 <FaInstagram className="text-xl" />
               </a>
-              <a aria-label="LinkedIn" href="https://www.linkedin.com/in/mesfin-getahun-78947a35a" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1" title="LinkedIn">
+              <a aria-label="LinkedIn" href="https://www.linkedin.com/in/lalie_2129" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1" title="LinkedIn">
                 <FaLinkedin className="text-xl" />
               </a>
-              <a aria-label="GitHub" href="https://github.com/Mesfin-Getahun" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1" title="GitHub">
+              <a aria-label="GitHub" href="https://github.com/lali-e21" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1" title="GitHub">
                 <FaGithub className="text-xl" />
               </a>
             </div>

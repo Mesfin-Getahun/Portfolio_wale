@@ -42,7 +42,7 @@ function App() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
             <div>
               <h2 className="text-2xl font-bold tracking-tight">
-                <span className="text-primary">M</span>esfin <span className="text-primary">G</span>.
+                <span className="text-primary">W</span>alelign <span className="text-primary">E</span>.
               </h2>
               <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">Full-Stack Developer</p>
             </div>
@@ -71,7 +71,7 @@ function App() {
           </div>
           
           <div className="text-center pt-8 border-t border-gray-200 dark:border-white/5 text-gray-500 dark:text-gray-400 text-sm">
-            <p>Copyright &copy; {new Date().getFullYear()} Mesfin Getahun. All rights reserved.</p>
+            <p>Copyright &copy; {new Date().getFullYear()} Walelign Enemayehu. All rights reserved.</p>
           </div>
         </div>
       </footer>

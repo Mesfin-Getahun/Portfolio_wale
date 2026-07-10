@@ -1,39 +1,34 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { FaCode, FaReact, FaDatabase, FaServer, FaNetworkWired } from 'react-icons/fa';
+import { FaCode, FaMobileAlt, FaPalette, FaUsers } from 'react-icons/fa';
 import { FaCropSimple } from 'react-icons/fa6';
 
 const services = [
   {
     icon: <FaCode className="text-4xl" />,
-    title: 'Frontend Web Development',
-    description: 'I specialize in building interactive and animated user interfaces with modern tech stacks.',
+    title: 'Full Stack Developer',
+    description: 'Builds scalable web applications using modern frontend and backend technologies.',
+  },
+  {
+    icon: <FaMobileAlt className="text-4xl" />,
+    title: 'React Native Developer',
+    description: 'React Native Developer focused on building high-performance, cross-platform mobile applications for Android and iOS. Experienced in creating responsive UIs, API integration, authentication, state management, and delivering seamless user experiences.',
+  },
+  {
+    icon: <FaPalette className="text-4xl" />,
+    title: 'Graphics Designer',
+    description: 'Creates engaging visual designs, branding, UI/UX, and digital marketing materials.',
+  },
+  {
+    icon: <FaUsers className="text-4xl" />,
+    title: 'Team Leader',
+    description: 'Results-driven Team Leader and Senior Developer with experience leading software development teams, mentoring developers, managing project lifecycles, and delivering high-quality solutions. Skilled in Agile practices, technical decision-making, code reviews, and ensuring projects are completed on time and to high standards.',
   },
   {
     icon: <FaCropSimple className="text-4xl" />,
     title: 'UI/UX Design',
     description: 'I build thoughtful UX/UI designs for websites to create seamless user journeys.',
-  },
-  {
-    icon: <FaReact className="text-4xl" />,
-    title: 'React Development',
-    description: 'I can build scalable websites using reusable components, clean code, and API integrations.',
-  },
-  {
-    icon: <FaDatabase className="text-4xl" />,
-    title: 'Backend Development',
-    description: 'I build secure and scalable server-side applications and database architectures.',
-  },
-  {
-    icon: <FaServer className="text-4xl" />,
-    title: 'Hosting Websites',
-    description: 'I deploy and manage web applications on reliable cloud hosting platforms.',
-  },
-  {
-    icon: <FaNetworkWired className="text-4xl" />,
-    title: 'API Integration',
-    description: 'I seamlessly connect frontend applications with robust REST and third-party APIs.',
   }
 ];
 

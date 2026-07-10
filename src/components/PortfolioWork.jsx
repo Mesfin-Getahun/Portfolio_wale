@@ -1,62 +1,66 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowUpRightFromSquare, FaGithub } from 'react-icons/fa6';
-import clockImg from '../assets/Screenshot 2025-04-14 162018.png';
-import calcImg from '../assets/Screenshot 2026-05-05 154956.png';
-import rpsImg from '../assets/Screenshot 2025-04-14 162532.png';
-import weatherImg from '../assets/Screenshot 2025-04-14 163007.png';
-import electionImg from '../assets/Screenshot 2026-05-05 161323.png';
-import tourImg from '../assets/photo_2025-12-09_21-14-43.jpg';
+import img1 from '../assets/photo_2026-07-09_19-45-40.jpg';
+import img2 from '../assets/photo_2026-07-09_19-45-45.jpg';
+import img3 from '../assets/photo_2026-07-09_19-45-50.jpg';
+import ht1 from '../assets/photo_2026-07-09_19-46-00.jpg';
+import ht2 from '../assets/photo_2026-07-09_19-46-08.jpg';
+import ht3 from '../assets/photo_2026-07-09_19-46-16.jpg';
+import cs1 from '../assets/photo_2026-07-09_19-46-20.jpg';
+import cs2 from '../assets/photo_2026-07-09_19-46-23.jpg';
 import netflixImg from '../assets/netflix.png';
+import bookCoverImg from '../assets/photo_2026-07-10_12-21-20.jpg';
+import aiCvImg from '../assets/photo_2026-07-10_12-21-02.jpg';
 
 const projects = [
   {
-    title: 'Tour and Travel Booking',
-    description: 'A comprehensive travel platform allowing users to explore destinations and book tours securely. Features JWT authentication, encrypted passwords, and Cloudinary media management.',
-    image: tourImg,
-    link: 'https://kasopiaethiopiatour.com/',
-    github: 'https://github.com/Mesfin-Getahun/Kasopia-tour-and-travel.git',
-    tags: ['React.js', 'Node/Express', 'MySQL', 'JWT', 'Cloudinary', 'Bcrypt']
+    title: 'Success Tutor',
+    description: 'Success Tutor Connector Platform\nA full-stack web and mobile application that connects students with tutors for online learning.',
+    images: [img1, img2, img3],
+    link: '#',
+    github: '#',
+    tags: ['Full-stack', 'Web', 'Mobile']
   },
   {
-    title: 'Tic Tac Toe Game',
-    description: 'A classic Tic Tac Toe game featuring interactive UI, score tracking, and responsive design.',
-    image: clockImg,
-    link: 'https://tic-tac-toe-game-in-react-topaz.vercel.app/',
-    github: 'https://github.com/Mesfin-Getahun/Tic-Tac-Toe-Game-In-React.git',
-    tags: ['HTML', 'CSS', 'JavaScript']
+    title: 'Hotel Website',
+    description: 'Designed and developed a modern and responsive hotel booking website that allows users to explore rooms, check availability, and make reservations easily. The website includes features such as room listings, image galleries, pricing details, contact forms, and an intuitive booking interface. Focused on clean UI/UX, fast performance, and mobile responsiveness to ensure a smooth user experience across all devices. Built using modern web technologies with attention to usability, accessibility, and professional design.',
+    images: [ht1, ht2, ht3],
+    link: '#',
+    github: '#',
+    tags: ['Web Technologies', 'UI/UX', 'Responsive Design']
+  },
+  {
+    title: 'Course sell app',
+    description: 'Developed a course-selling mobile application with an admin web dashboard that allows users to browse, purchase, and access online courses easily. The mobile app provides features such as course listings, secure payments, video lessons, and course book. The admin web panel enables administrators to manage courses, instructors, users, and sales. The project focuses on a clean UI, smooth user experience, and efficient content management for scalable e-learning platforms.',
+    images: [cs1, cs2],
+    link: '#',
+    github: '#',
+    tags: ['Mobile App', 'Admin Dashboard', 'E-Learning']
   },
   {
     title: 'Netflix Clone',
     description: 'A robust streaming platform clone featuring real-time movie data from TMDB API, secure Firebase authentication, and a fully responsive media-rich interface built for performance.',
-    image: netflixImg,
-    link: 'https://netflix-clone-two-coral.vercel.app/', /* Add your live link here */
+    images: [netflixImg],
+    link: 'https://netflix-clone-two-coral.vercel.app/', 
     github: 'https://github.com/Mesfin-Getahun/Netflix-Clone.git', 
     tags: ['React', 'Firebase', 'TMDB API', 'Vite']
   },
   {
-    title: 'Weather App',
-    description: 'A responsive weather dashboard providing real-time forecasts, interactive maps, and detailed climate data using robust external APIs.',
-    image: rpsImg,
-    link: 'https://mgsweatherapp.netlify.app/',
-    github: 'https://github.com/Mesfin-Getahun/Weather-App-with-Open-Weather-API-in-React.git',
-    tags: ['OpenWeather API', 'JavaScript', 'React', 'Custom CSS']
+    title: 'Graphics Design Book Cover',
+    description: 'A creative and visually appealing graphics design project for a professional book cover.',
+    images: [bookCoverImg],
+    link: '#',
+    github: '#',
+    tags: ['Graphics Design', 'Book Cover', 'Design']
   },
   {
-    title: 'Rock Paper Scissors',
-    description: 'A fun and interactive web-based Rock Paper Scissors game featuring smooth animations and real-time score keeping.',
-    image: weatherImg,
-    link: 'https://mgrockpaperscissorgame.netlify.app/',
-    github: 'https://github.com/Mesfin-Getahun/Rock-Paper-Scissor-Game.git',
-    tags: ['HTML', 'CSS', 'JavaScript']
-  },
-  {
-    title: 'Smart Attendance System',
-    description: 'An intelligent attendance tracking system that leverages YOLOv8 and OpenCV for real-time face detection and recognition, with a Tkinter GUI and local file-based storage.',
-    image: electionImg,
-    link: '#', 
-    github: 'https://github.com/Mesfin-Getahun/Smart-Attendance-using-Face-detection-and-Recognition.git',
-    tags: ['Python', 'Tkinter', 'OpenCV', 'YOLOv8', 'NumPy']
+    title: 'AI CV Maker and Editor',
+    description: 'An intelligent AI-powered platform for creating, editing, and optimizing professional resumes and CVs easily.',
+    images: [aiCvImg],
+    link: '#',
+    github: '#',
+    tags: ['AI', 'Web App', 'CV Maker']
   }
 ];
 
@@ -94,30 +98,41 @@ const PortfolioWork = () => {
               className="group flex flex-col bg-white dark:bg-dark-card rounded-2xl overflow-hidden border border-gray-100 dark:border-white/5 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
             >
               {/* Image Container */}
-              {project.link && project.link !== '#' ? (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="relative aspect-video overflow-hidden border-b border-gray-100 dark:border-white/5 flex items-center justify-center bg-white dark:bg-white cursor-pointer"
-                >
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    loading="lazy"
-                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
-                  />
-                </a>
-              ) : (
-                <div className="relative aspect-video overflow-hidden border-b border-gray-100 dark:border-white/5 flex items-center justify-center bg-white dark:bg-white">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    loading="lazy"
-                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
-              )}
+              <div 
+                className="relative aspect-video overflow-x-auto flex snap-x snap-mandatory border-b border-gray-100 dark:border-white/5 bg-white dark:bg-white" 
+                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+              >
+                {project.images.map((imgSrc, imgIndex) => (
+                  <div key={imgIndex} className="w-full h-full flex-shrink-0 snap-center relative transition-transform duration-700 group-hover:scale-[1.02]">
+                    {project.link && project.link !== '#' ? (
+                      <a href={project.link} target="_blank" rel="noreferrer" className="w-full h-full inline-block cursor-pointer flex items-center justify-center">
+                        <img
+                          src={imgSrc}
+                          alt={`${project.title} screenshot ${imgIndex + 1}`}
+                          loading="lazy"
+                          className="w-full h-full object-contain"
+                        />
+                      </a>
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center">
+                        <img
+                          src={imgSrc}
+                          alt={`${project.title} screenshot ${imgIndex + 1}`}
+                          loading="lazy"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                    )}
+                  </div>
+                ))}
+                
+                {/* Scroll Indicator hint */}
+                {project.images.length > 1 && (
+                  <div className="absolute top-3 right-3 bg-black/50 text-white/90 px-2 py-0.5 rounded-full text-[10px] font-medium tracking-wide backdrop-blur-sm shadow-sm pointer-events-none">
+                    Scroll ➜
+                  </div>
+                )}
+              </div>
 
               {/* Content Container */}
               <div className="p-6 md:p-8 flex flex-col flex-grow">
@@ -191,7 +206,7 @@ const PortfolioWork = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://github.com/Mesfin-Getahun"
+            href="https://github.com/lali-e21"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-3 px-8 py-3.5 bg-primary text-white rounded-full font-medium hover:bg-opacity-90 hover:shadow-lg hover:shadow-primary/30 transition-all cursor-pointer"

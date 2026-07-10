@@ -1,21 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  FaCode, FaUsers, FaWrench, FaReact, FaNodeJs, FaPhp, 
+  FaCode, FaUsers, FaWrench, FaReact, FaNodeJs, FaPhp, FaPython,
   FaPalette, FaMagic, FaMobileAlt, FaLightbulb, 
   FaUserFriends, FaComments, FaClock, FaSyncAlt, FaBookOpen 
 } from 'react-icons/fa';
 import { SiJavascript, SiHtml5 } from 'react-icons/si';
 
 const technicalSkills = [
-  { name: 'HTML / CSS', icon: <SiHtml5 />, color: 'text-orange-500', bg: 'bg-orange-500/10' },
-  { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
-  { name: 'React.js', icon: <FaReact />, color: 'text-cyan-500', bg: 'bg-cyan-500/10' },
-  { name: 'Node.js', icon: <FaNodeJs />, color: 'text-green-500', bg: 'bg-green-500/10' },
-  { name: 'PHP', icon: <FaPhp />, color: 'text-indigo-400', bg: 'bg-indigo-500/10' },
-  { name: 'Tailwind CSS', icon: <FaPalette />, color: 'text-teal-400', bg: 'bg-teal-500/10' },
-  { name: 'Framer Motion', icon: <FaMagic />, color: 'text-purple-500', bg: 'bg-purple-500/10' },
-  { name: 'Responsive UI', icon: <FaMobileAlt />, color: 'text-blue-500', bg: 'bg-blue-500/10' }
+  { name: 'ReactJs', icon: <FaReact />, color: 'text-cyan-500', bg: 'bg-cyan-500/10' },
+  { name: 'React Native', icon: <FaMobileAlt />, color: 'text-blue-500', bg: 'bg-blue-500/10' },
+  { name: 'Nodejs', icon: <FaNodeJs />, color: 'text-green-500', bg: 'bg-green-500/10' },
+  { name: 'Python', icon: <FaPython />, color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
+  { name: 'NextJs', icon: <FaCode />, color: 'text-gray-800 dark:text-gray-200', bg: 'bg-gray-500/10' },
+  { name: 'Adobe Photoshop', icon: <FaPalette />, color: 'text-blue-600', bg: 'bg-blue-600/10' },
+  { name: 'Adobe Illustrator', icon: <FaMagic />, color: 'text-orange-600', bg: 'bg-orange-600/10' }
 ];
 
 const professionalSkills = [
