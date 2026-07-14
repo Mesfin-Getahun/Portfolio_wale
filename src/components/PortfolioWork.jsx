@@ -12,6 +12,10 @@ import cs2 from '../assets/photo_2026-07-09_19-46-23.jpg';
 import netflixImg from '../assets/netflix.png';
 import bookCoverImg from '../assets/photo_2026-07-10_12-21-20.jpg';
 import aiCvImg from '../assets/photo_2026-07-10_12-21-02.jpg';
+import pharm1 from '../assets/photo_2026-07-14_22-10-03.jpg';
+import pharm2 from '../assets/photo_2026-07-14_22-10-07.jpg';
+import ecom1 from '../assets/photo_2026-07-14_22-10-16.jpg';
+import ecom2 from '../assets/photo_2026-07-14_22-10-19.jpg';
 
 const projects = [
   {
@@ -61,6 +65,22 @@ const projects = [
     link: '#',
     github: '#',
     tags: ['AI', 'Web App', 'CV Maker']
+  },
+  {
+    title: 'E-commerce Platform',
+    description: 'A full-stack e-commerce platform built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) with a modern, responsive user interface and scalable backend architecture.\n\nThe platform enables customers to browse products, search and filter items, manage shopping carts, place orders, and securely complete purchases. It includes user authentication, product management, order tracking, and an admin dashboard for managing products, users, inventory, and sales.',
+    images: [ecom1, ecom2],
+    link: '#',
+    github: '#',
+    tags: ['MERN Stack', 'E-commerce', 'React']
+  },
+  {
+    title: 'Pharmacy Inventory Management',
+    description: 'A full-stack pharmacy inventory management system developed using the MERN stack (MongoDB, Express.js, React.js, and Node.js) to help pharmacies efficiently manage medicines, stock levels, suppliers, sales, and inventory operations.\n\nThe system provides a user-friendly dashboard for tracking medicine availability, monitoring expiration dates, managing purchases and sales, and generating inventory reports. It improves pharmacy workflow by automating stock management and providing real-time inventory insights.',
+    images: [pharm1, pharm2],
+    link: '#',
+    github: '#',
+    tags: ['MERN Stack', 'Management System', 'React']
   }
 ];
 
