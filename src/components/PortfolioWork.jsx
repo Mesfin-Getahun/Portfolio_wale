@@ -16,8 +16,19 @@ import pharm1 from '../assets/photo_2026-07-14_22-10-03.jpg';
 import pharm2 from '../assets/photo_2026-07-14_22-10-07.jpg';
 import ecom1 from '../assets/photo_2026-07-14_22-10-16.jpg';
 import ecom2 from '../assets/photo_2026-07-14_22-10-19.jpg';
+import fyp1 from '../assets/photo_2026-07-15_11-19-09.jpg';
+import fyp2 from '../assets/photo_2026-07-15_11-19-12.jpg';
+import fyp3 from '../assets/photo_2026-07-15_11-19-18.jpg';
 
 const projects = [
+  {
+    title: 'Final Year Project',
+    description: 'AI-Powered Learning Mobile application using React native and Fast API at the backend. Personalized English lessons powered by advanced AI algorithms and Connect with certified tutors for real-time intensive practice.',
+    images: [fyp1, fyp2, fyp3],
+    link: '#',
+    github: '#',
+    tags: ['React Native', 'FastAPI', 'AI']
+  },
   {
     title: 'Success Tutor',
     description: 'Success Tutor Connector Platform\nA full-stack web and mobile application that connects students with tutors for online learning.',
@@ -69,7 +80,7 @@ const projects = [
   {
     title: 'E-commerce Platform',
     description: 'A full-stack e-commerce platform built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) with a modern, responsive user interface and scalable backend architecture.\n\nThe platform enables customers to browse products, search and filter items, manage shopping carts, place orders, and securely complete purchases. It includes user authentication, product management, order tracking, and an admin dashboard for managing products, users, inventory, and sales.',
-    images: [ecom1, ecom2],
+    images: [ecom2, ecom1],
     link: '#',
     github: '#',
     tags: ['MERN Stack', 'E-commerce', 'React']
