@@ -1,34 +1,38 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { FaCode, FaMobileAlt, FaPalette, FaUsers } from 'react-icons/fa';
-import { FaCropSimple } from 'react-icons/fa6';
+import { FaCode, FaMobileAlt, FaPalette, FaServer, FaDatabase, FaCloudUploadAlt } from 'react-icons/fa';
 
 const services = [
   {
     icon: <FaCode className="text-4xl" />,
-    title: 'Full Stack Developer',
-    description: 'Builds scalable web applications using modern frontend and backend technologies.',
+    title: 'Full Stack Development',
+    description: 'Modern MERN applications',
   },
   {
     icon: <FaMobileAlt className="text-4xl" />,
-    title: 'React Native Developer',
-    description: 'React Native Developer focused on building high-performance, cross-platform mobile applications for Android and iOS. Experienced in creating responsive UIs, API integration, authentication, state management, and delivering seamless user experiences.',
+    title: 'React Native Development',
+    description: 'Android & iOS apps',
   },
   {
     icon: <FaPalette className="text-4xl" />,
-    title: 'Graphics Designer',
-    description: 'Creates engaging visual designs, branding, UI/UX, and digital marketing materials.',
-  },
-  {
-    icon: <FaUsers className="text-4xl" />,
-    title: 'Team Leader',
-    description: 'Results-driven Team Leader and Senior Developer with experience leading software development teams, mentoring developers, managing project lifecycles, and delivering high-quality solutions. Skilled in Agile practices, technical decision-making, code reviews, and ensuring projects are completed on time and to high standards.',
-  },
-  {
-    icon: <FaCropSimple className="text-4xl" />,
     title: 'UI/UX Design',
-    description: 'I build thoughtful UX/UI designs for websites to create seamless user journeys.',
+    description: 'Modern interfaces',
+  },
+  {
+    icon: <FaServer className="text-4xl" />,
+    title: 'API Development',
+    description: 'REST APIs & Authentication',
+  },
+  {
+    icon: <FaDatabase className="text-4xl" />,
+    title: 'Database Design',
+    description: 'MongoDB & SQL',
+  },
+  {
+    icon: <FaCloudUploadAlt className="text-4xl" />,
+    title: 'Deployment',
+    description: 'Vercel • Netlify • Render',
   }
 ];
 

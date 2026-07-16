@@ -3,13 +3,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { FaSun, FaMoon, FaDownload } from 'react-icons/fa6';
 import profileImg from '../assets/DLIG4288.JPG';
+import { useTheme } from '../context/ThemeContext';
 
-const Header = ({ theme, toggleTheme }) => {
+const Header = () => {
+  const { theme, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [titleIndex, setTitleIndex] = useState(0);
 
-  const titles = ['Full Stack developer', 'Graphics designer'];
+  const titles = ['React Native Mobile Engineer', 'UI/UX Designer', 'Team Leader'];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -29,7 +31,7 @@ const Header = ({ theme, toggleTheme }) => {
   }, []);
 
   return (
-    <div id="header" className="w-full min-h-screen relative overflow-hidden">
+    <div id="header" className="w-full relative overflow-hidden bg-light dark:bg-dark">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-primary/20 dark:bg-primary/10 rounded-full blur-3xl opacity-50"></div>
@@ -81,7 +83,7 @@ const Header = ({ theme, toggleTheme }) => {
         </div>
       </header>
 
-      <div className="container mx-auto px-5 md:px-[10%] pt-32 pb-20 min-h-screen flex items-center">
+      <div className="container mx-auto px-5 md:px-[10%] pt-40 pb-20 min-h-[90vh] flex items-center">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20 w-full">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -89,12 +91,15 @@ const Header = ({ theme, toggleTheme }) => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="md:w-1/2 text-center md:text-left z-10"
           >
-            <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] text-gray-900 dark:text-white mb-4">
-              Hi, I'm <br />
+            <h1 className="text-4xl md:text-6xl font-black leading-[1.1] text-gray-900 dark:text-white mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">Walelign Enemayehu</span>
             </h1>
             
-            <div className="h-8 mb-6 flex items-center justify-center md:justify-start">
+            <h2 className="text-xl md:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+              Senior Full Stack MERN Developer
+            </h2>
+
+            <div className="h-8 mb-4 flex items-center justify-center md:justify-start">
               <AnimatePresence mode="wait">
                 <motion.p
                   key={titleIndex}
@@ -102,15 +107,15 @@ const Header = ({ theme, toggleTheme }) => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.5 }}
-                  className="text-lg md:text-xl text-primary dark:text-primary uppercase tracking-[0.2em] font-black"
+                  className="text-md md:text-xl text-primary font-semibold"
                 >
                   {titles[titleIndex]}
                 </motion.p>
               </AnimatePresence>
             </div>
             
-            <p className="mt-2 text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-lg mx-auto md:mx-0 leading-relaxed">
-              Tech stack: JavaScript, React, NodeJs, MongoDB, NextJs, Photoshop, Canvas, Figma...
+            <p className="mt-2 text-gray-600 dark:text-gray-400 text-lg max-w-lg mx-auto md:mx-0 leading-relaxed">
+              I build scalable web and mobile applications that solve real-world business problems using modern JavaScript technologies.
             </p>
             
             <div className="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
@@ -118,25 +123,25 @@ const Header = ({ theme, toggleTheme }) => {
                 to="contact" 
                 smooth={true} 
                 duration={500} 
-                className="px-8 py-3.5 bg-primary text-white rounded-full font-medium hover:bg-opacity-90 hover:shadow-lg hover:shadow-primary/30 transition-all cursor-pointer text-center"
+                className="px-6 py-3 bg-primary text-white rounded-full font-medium hover:bg-opacity-90 hover:shadow-lg hover:shadow-primary/30 transition-all cursor-pointer text-center"
               >
-                Let's Talk
+                Hire Me
               </Link>
+              <a 
+                href="/resume.pdf" 
+                download
+                className="px-6 py-3 bg-gray-800 dark:bg-white text-white dark:text-gray-900 rounded-full font-medium hover:shadow-lg transition-all cursor-pointer text-center flex items-center gap-2"
+              >
+                <FaDownload /> Download Resume
+              </a>
               <Link 
                 to="portfolio" 
                 smooth={true} 
                 duration={500} 
-                className="px-8 py-3.5 bg-white dark:bg-dark-card text-gray-900 dark:text-white border border-gray-200 dark:border-white/10 rounded-full font-medium hover:border-primary dark:hover:border-primary transition-all cursor-pointer text-center"
+                className="px-6 py-3 bg-white dark:bg-dark-card text-gray-900 dark:text-white border border-gray-200 dark:border-white/10 rounded-full font-medium hover:border-primary dark:hover:border-primary transition-all cursor-pointer text-center"
               >
-                View Work
+                View Projects
               </Link>
-              {/* <a 
-                href="/Mesfin_Getahun_CV.pdf" 
-                download
-                className="px-8 py-3.5 bg-primary text-white rounded-full font-medium hover:bg-opacity-90 hover:shadow-lg hover:shadow-primary/30 transition-all cursor-pointer flex items-center gap-2 justify-center"
-              >
-                <FaDownload /> Download CV
-              </a> */}
             </div>
           </motion.div>
           
@@ -146,16 +151,43 @@ const Header = ({ theme, toggleTheme }) => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="md:w-1/2 flex justify-center md:justify-end relative z-10"
           >
-            <div className="relative">
-              {/* Subtle animated border/glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary to-orange-400 rounded-3xl blur-2xl opacity-20 dark:opacity-30 animate-pulse"></div>
-              <img 
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary to-orange-400 rounded-3xl blur-2xl opacity-20 dark:opacity-30 animate-pulse transition-opacity group-hover:opacity-40"></div>
+              <motion.img 
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 src={profileImg} 
-                alt="Mesfin Getahun" 
+                alt="Walelign Enemayehu" 
                 className="w-full max-w-[400px] rounded-3xl shadow-2xl shadow-black/10 dark:shadow-black/40 object-cover relative z-10 border border-white/20 dark:border-white/10"
               />
             </div>
           </motion.div>
+        </div>
+      </div>
+
+      {/* Statistics Section */}
+      <div className="container mx-auto px-5 md:px-[10%] pb-20 relative z-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 pt-12 border-t border-gray-200 dark:border-white/10">
+          {[
+            { label: "Years Experience", value: "4+" },
+            { label: "Projects Completed", value: "35+" },
+            { label: "Technologies", value: "15+" },
+            { label: "GitHub Contributions", value: "1000+" },
+            { label: "Happy Clients", value: "10+" },
+            { label: "Project Success", value: "99%" }
+          ].map((stat, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+              className="text-center bg-white/50 dark:bg-dark-card/50 backdrop-blur-sm p-4 rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm"
+            >
+              <h3 className="text-2xl md:text-3xl font-black text-primary mb-1">{stat.value}</h3>
+              <p className="text-xs text-gray-600 dark:text-gray-400 uppercase tracking-wider font-semibold">{stat.label}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </div>

@@ -1,34 +1,82 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  FaCode, FaUsers, FaWrench, FaReact, FaNodeJs, FaPhp, FaPython,
-  FaPalette, FaMagic, FaMobileAlt, FaLightbulb, 
-  FaUserFriends, FaComments, FaClock, FaSyncAlt, FaBookOpen 
+  FaReact, FaNodeJs, FaMobileAlt, FaGithub, FaDocker, 
+  FaFigma, FaLaptopCode, FaServer, FaTools, FaHtml5, FaCss3Alt 
 } from 'react-icons/fa';
-import { SiJavascript, SiHtml5 } from 'react-icons/si';
+import { 
+  SiNextdotjs, SiTypescript, SiJavascript, SiTailwindcss, SiRedux, 
+  SiExpress, SiMongodb, SiJsonwebtokens, SiMongoose, 
+  SiExpo, SiGit, SiPostman, SiVercel, SiNetlify, SiFirebase 
+} from 'react-icons/si';
+import { TbApi } from 'react-icons/tb';
 
-const technicalSkills = [
-  { name: 'ReactJs', icon: <FaReact />, color: 'text-cyan-500', bg: 'bg-cyan-500/10' },
-  { name: 'React Native', icon: <FaMobileAlt />, color: 'text-blue-500', bg: 'bg-blue-500/10' },
-  { name: 'Nodejs', icon: <FaNodeJs />, color: 'text-green-500', bg: 'bg-green-500/10' },
-  { name: 'Python', icon: <FaPython />, color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
-  { name: 'NextJs', icon: <FaCode />, color: 'text-gray-800 dark:text-gray-200', bg: 'bg-gray-500/10' },
-  { name: 'Adobe Photoshop', icon: <FaPalette />, color: 'text-blue-600', bg: 'bg-blue-600/10' },
-  { name: 'Adobe Illustrator', icon: <FaMagic />, color: 'text-orange-600', bg: 'bg-orange-600/10' }
+const skillCategories = [
+  {
+    title: 'Frontend',
+    icon: <FaLaptopCode />,
+    color: 'text-blue-500',
+    bg: 'bg-blue-500/10',
+    skills: [
+      { name: 'React', icon: <FaReact className="text-[#61DAFB]" /> },
+      { name: 'Next.js', icon: <SiNextdotjs className="text-black dark:text-white" /> },
+      { name: 'TypeScript', icon: <SiTypescript className="text-[#3178C6]" /> },
+      { name: 'JavaScript', icon: <SiJavascript className="text-[#F7DF1E]" /> },
+      { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-[#06B6D4]" /> },
+      { name: 'Redux', icon: <SiRedux className="text-[#764ABC]" /> },
+      { name: 'HTML5', icon: <FaHtml5 className="text-[#E34F26]" /> },
+      { name: 'CSS3', icon: <FaCss3Alt className="text-[#1572B6]" /> },
+    ]
+  },
+  {
+    title: 'Backend',
+    icon: <FaServer />,
+    color: 'text-green-500',
+    bg: 'bg-green-500/10',
+    skills: [
+      { name: 'Node.js', icon: <FaNodeJs className="text-[#339933]" /> },
+      { name: 'Express.js', icon: <SiExpress className="text-black dark:text-white" /> },
+      { name: 'MongoDB', icon: <SiMongodb className="text-[#47A248]" /> },
+      { name: 'REST API', icon: <TbApi className="text-gray-600 dark:text-gray-300" /> },
+      { name: 'JWT', icon: <SiJsonwebtokens className="text-[#000000] dark:text-white" /> },
+      { name: 'Mongoose', icon: <SiMongoose className="text-[#880000]" /> },
+    ]
+  },
+  {
+    title: 'Mobile',
+    icon: <FaMobileAlt />,
+    color: 'text-purple-500',
+    bg: 'bg-purple-500/10',
+    skills: [
+      { name: 'React Native', icon: <FaReact className="text-[#61DAFB]" /> },
+      { name: 'Expo', icon: <SiExpo className="text-black dark:text-white" /> },
+    ]
+  },
+  {
+    title: 'Tools',
+    icon: <FaTools />,
+    color: 'text-orange-500',
+    bg: 'bg-orange-500/10',
+    skills: [
+      { name: 'Git', icon: <SiGit className="text-[#F05032]" /> },
+      { name: 'GitHub', icon: <FaGithub className="text-black dark:text-white" /> },
+      { name: 'Docker', icon: <FaDocker className="text-[#2496ED]" /> },
+      { name: 'Postman', icon: <SiPostman className="text-[#FF6C37]" /> },
+      { name: 'Vercel', icon: <SiVercel className="text-black dark:text-white" /> },
+      { name: 'Netlify', icon: <SiNetlify className="text-[#00C7B7]" /> },
+      { name: 'Figma', icon: <FaFigma className="text-[#F24E1E]" /> },
+    ]
+  }
 ];
 
-const professionalSkills = [
-  { name: 'Problem Solving', icon: <FaLightbulb />, color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
-  { name: 'Collaboration', icon: <FaUserFriends />, color: 'text-blue-500', bg: 'bg-blue-500/10' },
-  { name: 'Communication', icon: <FaComments />, color: 'text-green-500', bg: 'bg-green-500/10' },
-  { name: 'Time Management', icon: <FaClock />, color: 'text-red-500', bg: 'bg-red-500/10' },
-  { name: 'Adaptability', icon: <FaSyncAlt />, color: 'text-cyan-500', bg: 'bg-cyan-500/10' },
-  { name: 'Continuous Learning', icon: <FaBookOpen />, color: 'text-indigo-500', bg: 'bg-indigo-500/10' }
+const marqueeTechs = [
+  "React", "Next.js", "TypeScript", "Node.js", "Express", "MongoDB", 
+  "React Native", "Expo", "Tailwind", "Redux", "Docker", "Git", 
+  "Figma", "Firebase", "JWT", "REST API"
 ];
 
-const tools = [
-  'VS Code', 'Antigravity', 'Cursor', 'Git & GitHub', 'Figma', 'Postman', 'MySQL / MongoDB'
-];
+// Duplicate the array for seamless scrolling
+const duplicatedMarquee = [...marqueeTechs, ...marqueeTechs, ...marqueeTechs, ...marqueeTechs];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -45,10 +93,28 @@ const itemVariants = {
 
 const Skills = () => {
   return (
-    <div id="skills" className="py-24 bg-gray-50/50 dark:bg-dark-card/30 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-40 right-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl opacity-50 -z-10"></div>
+    <div id="skills" className="py-24 bg-gray-50/50 dark:bg-dark-card/30 relative overflow-hidden transition-colors duration-500">
       
+      {/* Modern Tech Stack Marquee */}
+      <div className="w-full overflow-hidden bg-white dark:bg-dark-card py-6 mb-16 border-y border-gray-100 dark:border-white/5 relative flex items-center">
+        {/* Gradients for fade effect on edges */}
+        <div className="absolute left-0 w-32 h-full bg-gradient-to-r from-white dark:from-dark-card to-transparent z-10"></div>
+        <div className="absolute right-0 w-32 h-full bg-gradient-to-l from-white dark:from-dark-card to-transparent z-10"></div>
+        
+        <motion.div
+          animate={{ x: [0, -2000] }}
+          transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
+          className="flex whitespace-nowrap pl-4"
+        >
+          {duplicatedMarquee.map((tech, index) => (
+            <div key={index} className="mx-6 text-xl font-bold text-gray-400 dark:text-gray-500/50 uppercase tracking-widest inline-flex items-center gap-4">
+              <span>{tech}</span>
+              <span className="text-primary/50 text-3xl">•</span>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+
       <div className="container mx-auto px-5 md:px-[10%] relative z-10">
         <div className="text-center mb-16">
           <motion.h2 
@@ -69,102 +135,48 @@ const Skills = () => {
           </motion.h1>
         </div>
 
-        <div className="max-w-6xl mx-auto flex flex-col gap-10">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            {/* Technical Skills */}
-            <div className="flex flex-col">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shadow-inner">
-                  <FaCode className="text-2xl" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {skillCategories.map((category, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-white dark:bg-dark-card p-6 md:p-8 rounded-3xl border border-gray-100 dark:border-white/5 shadow-sm"
+            >
+              <div className="flex items-center gap-4 mb-8">
+                <div className={`w-12 h-12 ${category.bg} ${category.color} rounded-2xl flex items-center justify-center text-2xl shadow-inner`}>
+                  {category.icon}
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Technical Skills</h2>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">{category.title}</h2>
               </div>
               
               <motion.div 
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-50px" }}
-                className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+                viewport={{ once: true }}
+                className="grid grid-cols-2 gap-4"
               >
-                {technicalSkills.map((skill, index) => (
+                {category.skills.map((skill, sIdx) => (
                   <motion.div 
-                    key={index}
+                    key={sIdx}
                     variants={itemVariants}
-                    className="group flex items-center gap-4 p-4 bg-white dark:bg-dark-card rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-default"
+                    whileHover={{ scale: 1.05 }}
+                    className="flex items-center gap-3 p-3 rounded-xl bg-gray-50/80 dark:bg-dark/50 border border-gray-100 dark:border-white/5 hover:border-primary/30 transition-colors"
                   >
-                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl ${skill.bg} ${skill.color} group-hover:scale-110 transition-transform duration-300`}>
+                    <div className="text-2xl">
                       {skill.icon}
                     </div>
-                    <span className="font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
+                    <span className="font-semibold text-gray-700 dark:text-gray-300 text-sm">
                       {skill.name}
                     </span>
                   </motion.div>
                 ))}
               </motion.div>
-            </div>
-
-            {/* Professional Skills */}
-            <div className="flex flex-col">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-2xl bg-teal-500/10 flex items-center justify-center text-teal-500 shadow-inner">
-                  <FaUsers className="text-2xl" />
-                </div>
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Professional Skills</h2>
-              </div>
-              
-              <motion.div 
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-50px" }}
-                className="grid grid-cols-1 sm:grid-cols-2 gap-4"
-              >
-                {professionalSkills.map((skill, index) => (
-                  <motion.div 
-                    key={index}
-                    variants={itemVariants}
-                    className="group flex items-center gap-4 p-4 bg-white dark:bg-dark-card rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-default"
-                  >
-                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl ${skill.bg} ${skill.color} group-hover:scale-110 transition-transform duration-300`}>
-                      {skill.icon}
-                    </div>
-                    <span className="font-semibold text-gray-800 dark:text-gray-200 group-hover:text-teal-500 transition-colors">
-                      {skill.name}
-                    </span>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
-          </div>
-
-          {/* Tools & Databases (Reverted to standard pills) */}
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-6 p-8 bg-white dark:bg-dark-card rounded-3xl border border-gray-100 dark:border-white/5 shadow-sm"
-          >
-            <div className="flex items-center gap-4 mb-6 justify-center md:justify-start">
-              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500 shadow-inner">
-                <FaWrench className="text-2xl" />
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Tools & Databases</h2>
-            </div>
-            
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              {tools.map((tool, index) => (
-                <span 
-                  key={index} 
-                  className="px-6 py-3 bg-gray-50 dark:bg-darker text-gray-700 dark:text-gray-300 rounded-full font-medium border border-gray-200 dark:border-white/10 hover:border-blue-500 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-default"
-                >
-                  {tool}
-                </span>
-              ))}
-            </div>
-          </motion.div>
-          
+            </motion.div>
+          ))}
         </div>
       </div>
     </div>

@@ -47,48 +47,33 @@ const Contact = () => {
             className="lg:basis-5/12"
           >
             <h2 className="text-sm uppercase tracking-[0.2em] text-primary font-semibold mb-2">Get In Touch</h2>
-            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900 dark:text-white">Let's Work Together</h1>
-            <p className="text-gray-600 dark:text-gray-400 mb-10 leading-relaxed text-lg">
-              I'm currently available to take on new projects. If you have a project that needs some creative touch, I'd love to hear about it.
-            </p>
-
-            <div className="space-y-6 mb-10">
-              <div className="flex items-center gap-5 p-4 bg-white dark:bg-dark-card rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm group">
-                <div className="w-12 h-12 rounded-full bg-light dark:bg-darker flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                  <FaEnvelope className="text-xl" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1">Email</p>
-                  <p className="font-semibold text-gray-900 dark:text-white">walelign2129@gmail.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-5 p-4 bg-white dark:bg-dark-card rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm group">
-                <div className="w-12 h-12 rounded-full bg-light dark:bg-darker flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                  <FaPhone className="text-xl" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1">Phone</p>
-                  <p className="font-semibold text-gray-900 dark:text-white">+251922840235</p>
-                </div>
-              </div>
-            </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900 dark:text-white">Let's Build Something Amazing Together.</h1>
             
+            <div className="mb-10">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Available for</h3>
+              <ul className="space-y-3">
+                {['Full-time', 'Freelance', 'Remote', 'Contract'].map((type, idx) => (
+                  <li key={idx} className="flex items-center gap-3 text-gray-600 dark:text-gray-400 font-medium">
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary text-sm">✔</span>
+                    {type}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             <div className="flex gap-4 flex-wrap">
-              {/* <a aria-label="Facebook" href="https://www.facebook.com/mesfin.getahun.186" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
-                <FaFacebook className="text-xl" />
-              </a> */}
+              <a aria-label="Email" href="mailto:walelign2129@gmail.com" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
+                <FaEnvelope className="text-xl" />
+              </a>
+             
+              <a aria-label="Instagram" href="https://www.instagram.com/lalie_2129/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
+                <FaInstagram className="text-xl" />
+                </a>
+              <a aria-label="GitHub" href="https://github.com/lali-e21" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
+                <FaGithub className="text-xl" />
+              </a>
               <a aria-label="Telegram" href="https://t.me/walie_21" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
                 <FaTelegram className="text-xl" />
-              </a>
-              <a aria-label="Instagram" href="https://www.instagram.com/mesfing1717/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1">
-                <FaInstagram className="text-xl" />
-              </a>
-              <a aria-label="LinkedIn" href="https://www.linkedin.com/in/lalie_2129" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1" title="LinkedIn">
-                <FaLinkedin className="text-xl" />
-              </a>
-              <a aria-label="GitHub" href="https://github.com/lali-e21" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white dark:bg-dark-card border border-gray-100 dark:border-white/5 shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all hover:-translate-y-1" title="GitHub">
-                <FaGithub className="text-xl" />
               </a>
             </div>
           </motion.div>

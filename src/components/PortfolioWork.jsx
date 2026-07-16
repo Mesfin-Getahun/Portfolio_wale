@@ -22,76 +22,52 @@ import fyp3 from '../assets/photo_2026-07-15_11-19-18.jpg';
 
 const projects = [
   {
-    title: 'Final Year Project',
-    description: 'AI-Powered Learning Mobile application using React native and Fast API at the backend. Personalized English lessons powered by advanced AI algorithms and Connect with certified tutors for real-time intensive practice.',
-    images: [fyp1, fyp2, fyp3],
-    link: '#',
-    github: '#',
-    tags: ['React Native', 'FastAPI', 'AI']
-  },
-  {
     title: 'Success Tutor',
-    description: 'Success Tutor Connector Platform\nA full-stack web and mobile application that connects students with tutors for online learning.',
+    description: 'A modern tutoring platform connecting students, parents, and tutors with scheduling, payments, dashboards, and learning management.',
     images: [img1, img2, img3],
     link: '#',
     github: '#',
-    tags: ['Full-stack', 'Web', 'Mobile']
+    tags: ['React', 'Node', 'Express', 'MongoDB', 'Tailwind']
   },
   {
-    title: 'Hotel Website',
-    description: 'Designed and developed a modern and responsive hotel booking website that allows users to explore rooms, check availability, and make reservations easily. The website includes features such as room listings, image galleries, pricing details, contact forms, and an intuitive booking interface. Focused on clean UI/UX, fast performance, and mobile responsiveness to ensure a smooth user experience across all devices. Built using modern web technologies with attention to usability, accessibility, and professional design.',
-    images: [ht1, ht2, ht3],
-    link: '#',
-    github: '#',
-    tags: ['Web Technologies', 'UI/UX', 'Responsive Design']
-  },
-  {
-    title: 'Course sell app',
-    description: 'Developed a course-selling mobile application with an admin web dashboard that allows users to browse, purchase, and access online courses easily. The mobile app provides features such as course listings, secure payments, video lessons, and course book. The admin web panel enables administrators to manage courses, instructors, users, and sales. The project focuses on a clean UI, smooth user experience, and efficient content management for scalable e-learning platforms.',
-    images: [cs1, cs2],
-    link: '#',
-    github: '#',
-    tags: ['Mobile App', 'Admin Dashboard', 'E-Learning']
-  },
-  {
-    title: 'Netflix Clone',
-    description: 'A robust streaming platform clone featuring real-time movie data from TMDB API, secure Firebase authentication, and a fully responsive media-rich interface built for performance.',
-    images: [netflixImg],
-    link: 'https://netflix-clone-two-coral.vercel.app/', 
-    github: 'https://github.com/Mesfin-Getahun/Netflix-Clone.git', 
-    tags: ['React', 'Firebase', 'TMDB API', 'Vite']
-  },
-  {
-    title: 'Graphics Design Book Cover',
-    description: 'A creative and visually appealing graphics design project for a professional book cover.',
-    images: [bookCoverImg],
-    link: '#',
-    github: '#',
-    tags: ['Graphics Design', 'Book Cover', 'Design']
-  },
-  {
-    title: 'AI CV Maker and Editor',
-    description: 'An intelligent AI-powered platform for creating, editing, and optimizing professional resumes and CVs easily.',
-    images: [aiCvImg],
-    link: '#',
-    github: '#',
-    tags: ['AI', 'Web App', 'CV Maker']
-  },
-  {
-    title: 'E-commerce Platform',
-    description: 'A full-stack e-commerce platform built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) with a modern, responsive user interface and scalable backend architecture.\n\nThe platform enables customers to browse products, search and filter items, manage shopping carts, place orders, and securely complete purchases. It includes user authentication, product management, order tracking, and an admin dashboard for managing products, users, inventory, and sales.',
-    images: [ecom2, ecom1],
-    link: '#',
-    github: '#',
-    tags: ['MERN Stack', 'E-commerce', 'React']
-  },
-  {
-    title: 'Pharmacy Inventory Management',
-    description: 'A full-stack pharmacy inventory management system developed using the MERN stack (MongoDB, Express.js, React.js, and Node.js) to help pharmacies efficiently manage medicines, stock levels, suppliers, sales, and inventory operations.\n\nThe system provides a user-friendly dashboard for tracking medicine availability, monitoring expiration dates, managing purchases and sales, and generating inventory reports. It improves pharmacy workflow by automating stock management and providing real-time inventory insights.',
+    title: 'Pharmacy Inventory System',
+    description: 'Enterprise inventory management platform with stock tracking, sales management, supplier management, reports, and authentication.',
     images: [pharm1, pharm2],
     link: '#',
     github: '#',
     tags: ['MERN Stack', 'Management System', 'React']
+  },
+  {
+    title: 'AI CV Maker',
+    description: 'AI-powered resume builder supporting multiple professional templates with PDF export and editing.',
+    images: [aiCvImg],
+    link: '#',
+    github: '#',
+    tags: ['AI', 'Web App', 'Resume Builder']
+  },
+  {
+    title: 'E-Commerce Platform',
+    description: 'Complete MERN e-commerce platform featuring authentication, shopping cart, orders, payments, admin dashboard, and product management.',
+    images: [ecom2, ecom1],
+    link: '#',
+    github: '#',
+    tags: ['MERN', 'E-commerce', 'Payment Gateway']
+  },
+  {
+    title: 'React Native Mobile App',
+    description: 'Cross-platform mobile application with authentication, notifications, offline storage, and responsive design.',
+    images: [fyp1, fyp2, fyp3],
+    link: '#',
+    github: '#',
+    tags: ['React Native', 'Expo', 'Mobile']
+  },
+  {
+    title: 'Portfolio Website',
+    description: 'My personal portfolio website designed to showcase my skills, projects, and services. Built with React and Tailwind CSS, featuring dark mode, animations using Framer Motion, and a highly responsive design.',
+    images: [ht1], // using hotel website image as a placeholder
+    link: '#',
+    github: '#',
+    tags: ['React', 'Tailwind CSS', 'Framer Motion']
   }
 ];
 
