@@ -41,7 +41,7 @@ const About = () => {
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               className="absolute -bottom-6 -right-6 md:bottom-10 md:-right-10 bg-white dark:bg-dark/80 backdrop-blur-md p-6 rounded-2xl shadow-2xl border border-gray-100 dark:border-white/10 z-20"
             >
-              <h3 className="text-4xl font-black text-primary mb-1">4+</h3>
+              <h3 className="text-4xl font-black text-primary mb-1">2+</h3>
               <p className="text-sm font-semibold text-gray-600 dark:text-gray-300">Years of<br/>Experience</p>
             </motion.div>
           </motion.div>

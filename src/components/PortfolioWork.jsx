@@ -106,27 +106,27 @@ const PortfolioWork = () => {
             >
               {/* Image Container */}
               <div 
-                className="relative aspect-video overflow-x-auto flex snap-x snap-mandatory border-b border-gray-100 dark:border-white/5 bg-white dark:bg-white" 
+                className="relative h-64 sm:h-72 md:h-80 overflow-x-auto flex snap-x snap-mandatory border-b border-gray-100 dark:border-white/5 bg-gray-50 dark:bg-dark-card/50" 
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
               >
                 {project.images.map((imgSrc, imgIndex) => (
                   <div key={imgIndex} className="w-full h-full flex-shrink-0 snap-center relative transition-transform duration-700 group-hover:scale-[1.02]">
                     {project.link && project.link !== '#' ? (
-                      <a href={project.link} target="_blank" rel="noreferrer" className="w-full h-full inline-block cursor-pointer flex items-center justify-center">
+                      <a href={project.link} target="_blank" rel="noreferrer" className="w-full h-full inline-block cursor-pointer flex items-center justify-center p-2">
                         <img
                           src={imgSrc}
                           alt={`${project.title} screenshot ${imgIndex + 1}`}
                           loading="lazy"
-                          className="w-full h-full object-contain"
+                          className="w-full h-full object-contain rounded-lg shadow-sm"
                         />
                       </a>
                     ) : (
-                      <div className="w-full h-full flex items-center justify-center">
+                      <div className="w-full h-full flex items-center justify-center p-2">
                         <img
                           src={imgSrc}
                           alt={`${project.title} screenshot ${imgIndex + 1}`}
                           loading="lazy"
-                          className="w-full h-full object-contain"
+                          className="w-full h-full object-contain rounded-lg shadow-sm"
                         />
                       </div>
                     )}

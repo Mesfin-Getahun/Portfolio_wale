@@ -7,8 +7,6 @@ import Experience from './components/Experience';
 import Services from './components/Services';
 import PortfolioWork from './components/PortfolioWork';
 import Skills from './components/Skills';
-import Testimonials from './components/Testimonials';
-import GithubStats from './components/GithubStats';
 import Contact from './components/Contact';
 
 function App() {
@@ -25,8 +23,6 @@ function App() {
       <Services />
       <PortfolioWork />
       <Skills />
-      <GithubStats />
-      <Testimonials />
       <Contact />
       
       {/* Footer */}

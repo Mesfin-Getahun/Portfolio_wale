@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { FaSun, FaMoon, FaDownload } from 'react-icons/fa6';
 import profileImg from '../assets/DLIG4288.JPG';
+import resumeFile from '../assets/resume.jpg';
 import { useTheme } from '../context/ThemeContext';
 
 const Header = () => {
@@ -128,8 +129,8 @@ const Header = () => {
                 Hire Me
               </Link>
               <a 
-                href="/resume.pdf" 
-                download
+                href={resumeFile} 
+                download="Walelign_Resume.jpg"
                 className="px-6 py-3 bg-gray-800 dark:bg-white text-white dark:text-gray-900 rounded-full font-medium hover:shadow-lg transition-all cursor-pointer text-center flex items-center gap-2"
               >
                 <FaDownload /> Download Resume
@@ -167,14 +168,12 @@ const Header = () => {
 
       {/* Statistics Section */}
       <div className="container mx-auto px-5 md:px-[10%] pb-20 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 pt-12 border-t border-gray-200 dark:border-white/10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 border-t border-gray-200 dark:border-white/10">
           {[
-            { label: "Years Experience", value: "4+" },
-            { label: "Projects Completed", value: "35+" },
-            { label: "Technologies", value: "15+" },
-            { label: "GitHub Contributions", value: "1000+" },
-            { label: "Happy Clients", value: "10+" },
-            { label: "Project Success", value: "99%" }
+            { label: "Years Experience", value: "2+" },
+            { label: "Projects Completed", value: "15" },
+            { label: "Technologies", value: "7+" },
+            { label: "Contributions", value: "200+" }
           ].map((stat, i) => (
             <motion.div 
               key={i}
