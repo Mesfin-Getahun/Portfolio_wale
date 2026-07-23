@@ -62,8 +62,8 @@ const projects = [
     tags: ['React Native', 'Expo', 'Mobile']
   },
   {
-    title: 'Portfolio Website',
-    description: 'My personal portfolio website designed to showcase my skills, projects, and services. Built with React and Tailwind CSS, featuring dark mode, animations using Framer Motion, and a highly responsive design.',
+    title: 'Hotel Website',
+    description: 'Designed and developed a modern and responsive hotel booking website that allows users to explore rooms, check availability, and make reservations easily. The website includes features such as room listings, image galleries, pricing details, contact forms, and an intuitive booking interface. Focused on clean UI/UX, fast performance, and mobile responsiveness to ensure a smooth user experience across all devices. Built using modern web technologies with attention to usability, accessibility, and professional design.',
     images: [ht1], // using hotel website image as a placeholder
     link: '#',
     github: '#',
